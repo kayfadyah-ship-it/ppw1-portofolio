@@ -12,20 +12,18 @@ Repository ini berisi kumpulan tugas praktikum Pemrograman Web (PPW1) dari Bab 1
 
 ## Struktur Repository
 
-* bab-01
-* bab-02
-* bab-03
-* bab-04
-* bab-05
-* bab-06
-* bab-07
-* bab-08
-* bab-09
-* bab-10
-* bab-11
-* bab-12
-* bab-13
-* bab-14
+* pertemuan 2
+* pertemuan 3
+* pertemuan 4
+* pertemuan 5
+* pertemuan 6
+* pertemuan 7
+* pertemuan 8
+* pertemuan 9
+*pertemuan 10
+* pertemuan 11
+* pertemuan 12
+
 
 ## Daftar Tugas
 
@@ -43,8 +41,7 @@ Repository ini berisi kumpulan tugas praktikum Pemrograman Web (PPW1) dari Bab 1
 | Bab 10 | Praktikum Bab 10     |
 | Bab 11 | PHP Dasar            |
 | Bab 12 | PHP dan Database     |
-| Bab 13 | Authentication       |
-| Bab 14 | Project Akhir        |
+
 
 ## Screenshot
 
