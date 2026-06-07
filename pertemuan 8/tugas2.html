@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tugas 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2 class="mb-4">Formulir Pendaftaran Mahasiswa</h2>
+    <div id="successAlert" class="alert alert-success alert-dismissible fade d-none" role="alert">
+        Pendaftaran berhasil!
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+
+    <form id="formPendaftaran" class="needs-validation" novalidate>
+
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label class="form-label">Nama Lengkap</label>
+                <input type="text" class="form-control" required>
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">NIM</label>
+                <input type="text" class="form-control" required>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Program Studi</label>
+            <select class="form-select" required>
+                <option selected>Pilih Prodi</option>
+                <option>Teknologi Rekayasa Perangkat Lunak</option>
+                <option>Informatika</option>
+                <option>Sistem Informasi</option>
+                <option>Dokter Hewan</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Semester</label>
+            <select class="form-select">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Alamat</label>
+            <textarea class="form-control" rows="3"></textarea>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Foto Profil</label>
+            <input type="file" class="form-control">
+        </div>
+        <div class="d-flex gap-2">
+            <button type="submit" class="btn btn-success">Simpan</button>
+            <button type="reset" class="btn btn-secondary">Reset</button>
+        </div>
+
+    </form>
+
+</div>
+<script>
+document.getElementById("formPendaftaran").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const form = this;
+
+    if (!form.checkValidity()) {
+        form.classList.add("was-validated");
+        return;
+    }
+
+    const alertBox = document.getElementById("successAlert");
+    alertBox.classList.remove("d-none");
+
+    setTimeout(() => {
+        alertBox.classList.add("show");
+    }, 10);
+
+    form.reset();
+    form.classList.remove("was-validated");
+});
+</script>
+
+</body>
+</html>

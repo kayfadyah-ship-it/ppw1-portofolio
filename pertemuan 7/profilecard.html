@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Tugas 1 - CSS Position</title>
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  height: 2000px; 
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  background: #333;
+  color: white;
+  padding: 15px;
+  z-index: 1000;
+}
+.card {
+  position: relative;
+  width: 280px;
+  height: 350px;
+  background: #f4f4f4;
+  margin: 50px auto;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+.badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: green;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: blue;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1000;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">Navbar Sticky</div>
+
+<div class="card">
+  <div class="badge">Online 🟢</div><br><br>
+  <img src="https://i.pinimg.com/736x/d0/36/d9/d036d997696089d35eb0d47e9a01dc14.jpg" alt="Carmen" style="width:50%">
+  <h2>Carmen</h2>
+  <p>Hearts2hearts</p>
+</div>
+
+<div class="top-btn" onclick="window.scrollTo({top:0, behavior:'smooth'})">
+⬆
+</div>
+
+</body>
+</html>

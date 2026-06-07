@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fieldtext</title>
+</head>
+<body>
+    <h2>DATA DIRI</h2>
+
+    <form action="kosong.html" target="_parent" method="post">
+        <p>contoh penggunaan atribut require.<br>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" required><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" required><br></p>
+
+        <p>contoh menggunakan atribute readonly.<br>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="Muhammad" readonly><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="elang" readonly><br></p>
+
+        <p>contoh penggunaan atribute disabel.<br>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="Muhammad" disabled><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="elang" disabled><br>
+        </p>
+
+        <p>contoh penggunaan atribute size dan placeholder.<br>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" size="50" placeholder="Muhammad"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" size="50" placeholder="elang"><br>
+        </p>
+
+        <p>contoh penggunaan atribute autofocus.<br>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" autofocus><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" autofocus><br>
+        </p>
+
+        <br>
+        <label for="cars">Choose a car:</label>
+        <select id="cars" name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="toyota">Toyota</option>
+            <option value="hyundai">Hyundai</option>
+            <option value="honda">Honda</option>
+        </select>
+        <p>Gender<br>
+            <input type="radio" id="lk" name="jeniskelamin" value="Laki-laki">
+            <label for="lk">Laki-laki</label><br>
+            <input type="radio" id="pr" name="jeniskelamin" value="Perempuan">
+            <label for="pr">Perempuan</label>
+        </p>
+        <p>What your Hobby?<br>
+            <input type="checkbox" id="btangkis" name="hobby1" value="BuluTangkis">
+            <label for="btsngkis">Bulu Tangkis</label><br>
+            <input type="checkbox" id="voli" name="hobby2" value="Voli">
+            <label for="voli">Voli</label><br>
+            <input type="checkbox" id="glf" name="hobby3" value="Golf">
+            <label for="glf">Golf</label><br>
+            <input type="checkbox" id="sb" name="hobby4" value="SepakBola">
+            <label for="sb">Sepak Bola</label><br>
+        </p>
+        <textarea name="massage" rows="10" cols="30"> Description Ur Self.
+        </textarea><br>
+        <br>
+        <input type="submit" value="Submit">
+        <button type="button" onclick="alert('Hello Word')">Click Me</button>
+    </form>
+</body>
+</html>

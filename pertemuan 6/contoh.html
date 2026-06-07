@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Profile Card</title>
+  <style>
+    body {
+      height: 2000px; /* biar bisa scroll */
+      font-family: Arial;
+    }
+
+    /* Navbar */
+    .navbar {
+      position: sticky;
+      top: 0;
+      background: black;
+      color: white;
+      padding: 10px;
+      z-index: 1000;
+    }
+
+    /* Card */
+    .card {
+      position: relative;
+      width: 280px;
+      height: 350px;
+      border: 1px solid #ccc;
+      margin: 50px auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Badge */
+    .badge {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: green;
+      color: white;
+      padding: 5px;
+      font-size: 12px;
+    }
+
+    /* Back to Top */
+    .top-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: blue;
+      color: white;
+      padding: 10px;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">Navbar</div>
+
+  <div class="card">
+    <div class="badge">Online 🟢</div>
+    <h2>Nama Kamu</h2>
+    <p>Mahasiswa</p>
+  </div>
+
+  <button class="top-btn">Top</button>
+
+</body>
+</html>

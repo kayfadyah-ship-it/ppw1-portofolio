@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <title>Belajar JavaScript dari Nol</title>
+    <script>
+        // Script di head dieksekusi sebelum konten HTML tampil
+        console.log("Hello JS dari Head");
+    </script>
+</head>
+
+<body>
+    <p>Tutorial JavaScript untuk Pemula</p>
+    <script>
+        // document.write("<h1>Hello World!</h1>");
+        // document.write("<hr>");
+        // document.write("<p>Saya sedang belajar Javascript</p>");
+        // console.log("Hello JS dari Body");
+
+        // // var — cara lama, masih valid tapi mulai dihindari
+        // var nama = "Petani Kode";
+        // var visitorCount = 50322;
+        // var isActive = true;
+
+        // // let — gunakan untuk nilai yang bisa berubah(ES6)
+        // let price = 15000;
+        // price = 18000; // nilai bisa diubah
+
+
+        // alert("Selamat datang!");
+        // window.alert("Cara lengkap penulisannya");
+
+
+        // // ── TIPE DATA PRIMITIF ────────────────────────────────────────
+        // var nama = "Dian"; // String (teks)
+        // var umur = 22; // Number (bilangan bulat)
+        // var tinggi = 1.65; // Number (bilangan pecahan)
+        // var lulus = true; // Boolean (true/false)
+        // var nilaiNull = null; // Null (kosong disengaja)
+        // var belumDiisi; // Undefined (belum diisi)
+
+        // // ── TIPE DATA NON-PRIMITIF ────────────────────────────────────
+        // var mahasiswa = { nama: "Ani", nim: "12345" }; // Object
+        // var nilaiUTS = [85, 90, 78, 92]; // Array
+        // // Cek tipe data dengan typeof
+        // typeof nama; // "string"
+        // typeof umur; // "number"
+        // typeof lulus; // "boolean"
+        // typeof mahasiswa; // "object"
+        // typeof nilaiUTS; // "object" <--array dianggap object!
+        // Array.isArray(nilaiUTS); // true <-- cara benar cek array
+
+        // // Menampilkan isi variabel
+        // var name = "Petani Kode";
+        // var visitorCount = 50322;
+        // var isActive = true;
+        // var url = "https://www.petanikode.com";
+        // alert("Selamat datang di " + name);
+        // document.write("Nama Situs: " + name + "<br>");
+        // document.write("Jumlah Pengunjung: " + visitorCount + "<br>");
+        // document.write("Status Aktif: " + isActive + "<br>");
+        // document.write("Alamat URL: " + url + "<br>");
+
+        // // Mengisi ulang variabel (mutable)
+        // var age = 18;
+        // age = 21; // nilai berubah
+        // // Menghapus variabel
+        // bookTitle = "Belajar Pemrograman Javascript";
+        // delete bookTitle;
+
+        // var a = 5, b = 3;
+        // var c = a + b;
+        // console.log(c); // 8
+        // // + pada string = penggabungan (concatenation), bukan penjumlahan!
+        // var hasil = "10" + "2";
+        // console.log(hasil); // "102" bukan 12
+
+        // // Sintaks: kondisi ? "jika true" : "jika false"
+        // var pertanyaan = confirm("Apakah kamu berumur diatas 18 tahun?");
+        // var hasil = pertanyaan ? "Selamat datang" : "Kamu tidak boleh disini";
+        // document.write(hasil);
+        // // Contoh lain:
+        // var nilai = 75;
+        // var status = nilai >= 60 ? "Lulus" : "Tidak Lulus";
+        // console.log(status); // "Lulus"
+
+        // // alert() menampilkan pesan, tidak mengembalikan nilai
+        // alert("Selamat datang di tutorial Javascript");
+        // window.alert("Cara lengkap penulisannya"); // sama saja
+        // // Menampilkan alert saat tombol diklik
+        // // <button onclick="alert('Tombol diklik!')">Klik Saya</button>
+        // // Atau panggil fungsi terlebih dahulu
+        // function sayHello() {
+        //     alert("Hello!");
+        // }
+        // // <button onclick="sayHello()">Klik Aku!</button>
+
+        // // Parameter: (teks pertanyaan, nilai default)
+        // var nama = prompt("Siapa nama kamu?", "");
+        // document.write("<p>Hello " + nama + "</p>");
+
+        // const nilaiMahasiswa = [85, 92, 78, 65, 90];
+        // // forEach - menjalankan fungsi untuk setiap elemen
+        // nilaiMahasiswa.forEach(function (nilai, index) {
+        //     var status = nilai >= 70 ? "Lulus" : "Remedial";
+        //     console.log("Mahasiswa " + (index + 1) + ": " + nilai + " — " +
+        //         status);
+        // });
+        // // map() — buat array baru dari transformasi
+        // const grade = nilaiMahasiswa.map(function (n) {
+        //     if (n >= 90) return "A";
+        //     if (n >= 80) return "B";
+        //     if (n >= 70) return "C";
+        //     return "D";
+        // });
+        // console.log(grade); // ["B", "A", "C", "D", "A"]
+
+        // var stok = 10;
+        // var terjual = 0;
+        // while (stok > 0) {
+        //     var beli = Math.floor(Math.random() * 3) + 1; // acak 1-3
+        //     if (beli > stok) beli = stok;
+        //     stok -= beli;
+        //     terjual += beli;
+        //     console.log("Terjual " + beli + ", sisa stok: " + stok);
+        // }
+        // console.log("Total terjual: " + terjual);
+
+        const tombol = document.getElementById("tombol-submit");
+        // addEventListener adalah cara yang direkomendasikan
+        tombol.addEventListener("click", function (event) {
+            event.preventDefault(); // cegah form submit / link berpindah
+            console.log("Tombol diklik!");
+        });
+        // Dengan arrow function (lebih ringkas)
+        tombol.addEventListener("click", (e) => {
+            document.getElementById("hasil").textContent = "Diklik!";
+        });
+        // Event lainnya yang sering digunakan:
+        const input = document.getElementById("nama");
+        input.addEventListener("input", (e) => {
+            // Dipanggil setiap karakter diketik — untuk live preview
+            document.getElementById("preview").textContent = e.target.value;
+        });
+        document.addEventListener("keydown", (e) => {
+            if (e.key === "Enter") console.log("Enter ditekan!");
+            if (e.key === "Escape") console.log("Escape ditekan!");
+        });
+
+
+    </script>
+
+</body>
+
+</html>

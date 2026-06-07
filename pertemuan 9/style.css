@@ -1,0 +1,135 @@
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Poppins;
+background:linear-gradient(to right,#032d84,#1694ff);
+}
+
+.logo-font{
+font-family:'Italiana', serif;
+font-size:36px;
+}
+
+.intro-font{
+font-family:'Abhaya Libre', serif;
+font-size:32px;
+}
+
+.name-font{
+font-family: 'Poppins', sans-serif;
+font-weight:600;
+font-size:64px;
+}
+
+.software-engineer-font{
+font-family:'Poppins', sans-serif;
+font-size:32px;
+font-weight:400;
+color:#A7A7A7 !important;
+}
+
+.navbar{
+background:transparent;
+}
+
+.nav-link{
+color:white !important;
+margin-left:10px;
+}
+
+.nav-link.active{
+background:#4A8AFF;
+border-radius:20px;
+padding:6px 15px !important;
+}
+
+.hero{
+min-height:100vh;
+background: url('PPW 29 April desain figma/background.png') no-repeat center center/cover;
+display:flex;
+align-items:center;
+}
+
+.hero-img{
+width:320px;
+height:320px;
+object-fit:cover;
+border-radius:50%;
+}
+
+.about-img{
+width:300px;
+border-radius:20px;
+}
+
+.project-card{
+transition:0.3s;
+border:none;
+border-radius:15px;
+overflow:hidden;
+height:100%;
+}
+
+.profile-img{
+width:100%;
+height:760px;
+object-fit:cover;
+object-position:center;
+}
+
+.project-card:hover{
+transform:translateY(-10px);
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+.social-icon a{
+display:inline-flex;
+justify-content:center;
+align-items:center;
+width:50px;
+height:50px;
+background:white;
+color:black;
+border-radius:50%;
+margin:0 10px;
+font-size:22px;
+text-decoration:none;
+transition:0.3s;
+}
+
+.social-icon a:hover{
+background:#5b8cff;
+color:white;
+}
+
+
+.footer{
+background:transparent;
+}
+
+.footer a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+}
+
+@media(max-width:768px){
+
+.hero{
+text-align:center;
+padding-top:100px;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+.hero-img{
+width:220px;
+height:220px;
+}
+
+}

@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Latihan membuat field text</title>
+    </head>
+    <body>
+        <h1>FORM PRESENSI</h1>
+
+        <form action="submit.html" method="post">
+            <label for="ndepan">Nama depan:</label>
+            <input type="text" name="ndepan" id="ndepan">
+            <br>
+            <label for="nbelakang">Nama belakang:</label>
+            <input type="text" id="nbelakang" name="nbelakang">
+            <br>
+            <label for="class">Class</label>
+            <input type="text" name="class" id="class"><br>
+
+            <label for="phone">Enter a phone number</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="+62">
+            
+            <br>
+            <label for="major">Choose your major:</label>
+
+            <select name="major" id="jenis">
+                <option value="Choose">Choose</option>
+                <option value="TRPL">TRPL</option><br>
+                <option value="TRI">TRI</option><br>
+                <option value="TRIK">TRIK</option><br>
+            </select>
+
+            <p>Gender <br>
+            <input type="radio" id="female" name="gender">
+            <label for="gender">Female</label><br>
+            <input type="radio" id="male" name="gender">
+            <label for="gender">Male</label>
+            <br>
+            <input type="submit" value="Submit"></p>
+        </form>
+        <p>
+            perhatikan bahwa ketika kalian mengetikkan
+            karakter-karakter dalam suatu field password, browser 
+            akan menampilkan asterisk atau bullet saja,
+            bukannya karakter yang diketik. 
+        </p>
+    </body>
+</html>

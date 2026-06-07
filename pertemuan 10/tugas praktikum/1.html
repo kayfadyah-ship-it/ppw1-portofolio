@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas JavaScript</title>
+
+    <!-- EMBED JAVASCRIPT -->
+    <script>
+        // Output console.log
+        console.log("Ini output dari JavaScript EMBED");
+
+        // Output innerHTML
+        function tampilEmbed() {
+            document.getElementById("hasilEmbed").innerHTML =
+                "<b>Output innerHTML dari Embed JavaScript</b>";
+        }
+    </script>
+</head>
+<body>
+
+    <h1>Tugas JavaScript</h1>
+
+    <!--INLINE JAVASCRIPT -->
+    <button onclick="alert('Ini output alert dari Inline JavaScript')">
+        Klik Alert Inline
+    </button>
+
+    <br><br>
+
+    <!-- EMBED JAVASCRIPT -->
+    <button onclick="tampilEmbed()">
+        Tampilkan InnerHTML
+    </button>
+
+    <div id="hasilEmbed"></div>
+
+    <br>
+
+    <!-- document.write -->
+    <script>
+        // Output document.write
+        document.write("<p>Ini output document.write dari Embed JavaScript</p>");
+    </script>
+
+    <!-- EKSTERNAL JAVASCRIPT -->
+    <script src="1.eksternal.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home </title>
+
+    <style>
+        nav{
+            background-color: rgb(66, 66, 66);
+            padding: 15px;
+            color: white;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul{
+            display: flex;
+            gap: 25px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            color: white;
+            text-decoration: none;
+        }
+        /* Mobile (≤ 480px) */
+        @media (min-width: 320px) and (max-width: 480px) {
+            nav ul {
+                flex-direction: column;
+            }
+            body {
+            background-color: lightgray;
+            }
+            }
+        /* Tablet (481px - 768px) */
+        @media (min-width: 481px) and (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+        body {
+        background-color: lightblue;
+        }
+        }
+        /* Laptop (769px - 1024px) */
+        @media (min-width: 769px) and (max-width: 1024px) {
+            nav ul {
+                flex-direction: row;
+            }
+        body {
+        background-color: lightgreen;
+        }
+        }
+        /* Desktop (≥ 1025px) */
+        @media (min-width: 1025px) {
+            nav ul {
+                flex-direction: row;
+            }
+        body {
+        background-color: white;
+        }
+        }
+        
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul 
+            style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;">
+            <li><a href="tugas_praktikum.html">My Responsive Website</a></li>
+
+                <li>
+                    <ul 
+                    style="
+                    display: flex;
+                    gap: 10px;">
+
+                        <li><a href="responsive.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </li>
+            </ul>
+        
+        </nav>
+   </header> 
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Tugas 3 - Animation</title>
+<style>
+:root {
+  --primary: #3498db;
+  --secondary: #2ecc71;
+  --dark: #333;
+}
+
+/* Buttons */
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Hover effects */
+.btn1:hover {
+  background: var(--primary);
+  color: white;
+}
+
+.btn2:hover {
+  transform: scale(1.2);
+}
+
+.btn3:hover {
+  box-shadow: 0 0 10px black;
+}
+
+/* Spinner */
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #ccc;
+  border-top: 5px solid var(--primary);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Fade in */
+.fade {
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Card rotate */
+.card {
+  width: 150px;
+  height: 150px;
+  background: var(--secondary);
+  margin: 20px auto;
+  transition: transform 0.5s;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}
+</style>
+</head>
+<body>
+
+<div class="fade">
+  <h2>Animasi Fade In</h2>
+</div>
+
+<button class="btn1">Hover Warna</button>
+<button class="btn2">Zoom</button>
+<button class="btn3">Shadow</button>
+
+<div class="spinner"></div>
+
+<div class="card"></div>
+
+</body>
+</html>
+
+
+

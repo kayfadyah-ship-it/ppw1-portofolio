@@ -1,0 +1,122 @@
+<html>
+<head>
+    <title>tugas website CSS</title>
+    <style>
+        body { font-family: Arial, Helvetica, sans-serif; }
+        
+        .navbar { overflow: hidden; 
+            background-color: #333; }
+        
+        .navbar a { float: left; 
+            font-size: 16px; 
+            color: white; 
+            text-align: center; padding: 14px 16px; 
+            text-decoration: none; }
+       
+        .dropdown { float: left; 
+            overflow: hidden; }
+
+        .dropdown .dropbtn { font-size: 16px; 
+            border: none; 
+            outline: none; 
+            color: white; 
+            padding: 14p16px; 
+            border-color: inherit; 
+            font-family: inherit; 
+            margin: 0; }
+        
+        .navbar a:hover, .dropdown:hover .dropbtn { background-color: red; }
+        
+        .dropdown-content { display: none; 
+            position: absolute; 
+            background-color: #f9f9f9; 
+            min-width:160px; 
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); 
+            z-index: 1; }
+        
+        .dropdown-content a { float: none; 
+            color: black; 
+            padding: 12px 16px; 
+            text-decoration: none;
+            display: block; 
+            text-align: left; }
+        
+        .dropdown-content a:hover { background-color: #ddd; }
+        
+        .dropdown:hover .dropdown-content { display: block; }
+
+        .indent{
+            text-indent: 40px;
+        }
+
+        .line{
+            line-height: 1.5;
+        }
+
+        .justify{
+            text-align: justify;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        .content{
+            flex: 2;
+            padding-right: 20px;
+            background-color: #e0dede;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="dokumentasi.html">Dokumentasi</a>
+        
+        <div class="dropdown">
+            <button class="dropbtn">Dropdown</button>
+            <div class="dropdown-content">
+                <a href="dropdown.html">Lomba 17 agustus</a>
+            </div>
+        </div>
+    </div>
+
+        <div class="content">
+            <h1><b>Perayaan 17 agustus</b></h1>
+
+            <p class="indent line justify"> 
+            Tanggal 17 Agustus merupakan hari yang sangat bersejarah bagi bangsa Indonesia.
+            Pada tanggal ini, Indonesia memproklamasikan kemerdekaannya pada tahun 1945.
+            Hari tersebut diperingati setiap tahun sebagai Hari Kemerdekaan Republik Indonesia
+            untuk mengenang perjuangan para pahlawan dalam merebut kemerdekaan. Setiap 17 agustus,
+            akan diawali dengan adaya upacara untuk memperingati 17 agustus, kemudian akan ada
+            berbagai perlombaan yang akan diselenggarakan. 
+            </p>
+            <p class="justify">
+                Acara perayaan kemerdekaan akan diselenggarakan pada tanggal 17 Agustus setelah 
+                pelaksanaan upacara kemerdekaan, acara 
+                dimulai pukul 10.00 pagi hingga selesai di lapangan. akan ada berbagai perlombaan 
+            </p>
+
+            <h2>Perlombaan:</h2>
+            <ul>
+            <li>Lomba Balap Karung</li>
+            <li>Lomba Makan Kerupuk</li>
+            <li>Lomba Tarik Tambang</li>
+            <li>Lomba Panjat Pinang</li>
+            <li>Lomba Memasukkan Paku ke Botol</li>
+            <li>Lomba Masak</li>
+            <li>Lomba Joget Balon</li>
+            </ul>
+
+            <p>perlombaan bisa diikuti oleh anak-anak hingga orang tua</p>
+        </div>
+    </div>       
+    
+    
+</body>
+</html>
