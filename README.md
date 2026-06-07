@@ -50,15 +50,15 @@ Repository ini berisi kumpulan tugas praktikum Pemrograman Web (PPW1) dari Bab 1
 
 ### Bab 2
 
-![Bab 2](assets/pertemuan 2.png)
+[Bab 2](assets/pertemuan 2.png)
 
 ### Bab 3
 
-![Bab 3](assets/pertemuan 3.png)
+[Bab 3](assets/pertemuan 3.png)
 
 ### Bab 4
 
-![Bab 4](assets/pertemuan 4.png)
+[Bab 4](assets/pertemuan 4.png)
 
 ## Link Repository
 
